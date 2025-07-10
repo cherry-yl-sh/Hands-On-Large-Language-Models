@@ -6,7 +6,7 @@ print(torch.version.cuda)
 # Load model and tokenizer
 model = AutoModelForCausalLM.from_pretrained(
     "microsoft/Phi-3-mini-4k-instruct",
-    device_map="cpu",
+    device_map="mps",
     torch_dtype="auto",
     trust_remote_code=False,
 )
